@@ -222,7 +222,7 @@ if (!empty($_REQUEST['type'])) {
 		<h1 style="margin: 0; font-size: 1.2em; font-weight: bold;">Serialized PHP Editor</h1>
 		<div style="margin: .4em 0">
 			Choose a language to use for editing:
-			<label><input type="radio" name="language" value="yaml" <?php if ($yaml_works) { ?>checked="checked"<?php } else { ?>disabled="disabled"<? } ?> /> YAML</label>
+			<label><input type="radio" name="language" value="yaml" <?php if ($yaml_works) { ?>checked="checked"<?php } else { ?>disabled="disabled"<?php } ?> /> YAML</label>
 			<label><input type="radio" name="language" value="json" <?php if (!$yaml_works) { ?>checked="checked"<?php } ?> /> JSON</label>
 			<label><input type="radio" name="language" value="php" <?php if ($secure_mode) { ?>disabled="disabled"<?php } ?> /> PHP</label>
 			<?php if (!$yaml_works) { ?>
